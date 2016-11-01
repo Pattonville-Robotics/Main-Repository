@@ -102,7 +102,6 @@ public class FtcRobotControllerActivity extends Activity {
   private static final int REQUEST_CONFIG_WIFI_CHANNEL = 1;
   private static final boolean USE_DEVICE_EMULATION = false;
   private static final int NUM_GAMEPADS = 2;
-    public static Context applicationContext;
   protected WifiManager.WifiLock wifiLock;
   protected RobotConfigFileManager cfgFileMgr;
 
@@ -192,7 +191,6 @@ public class FtcRobotControllerActivity extends Activity {
     setContentView(R.layout.activity_ftc_controller);
 
     context = this;
-      applicationContext = getApplicationContext();
     utility = new Utility(this);
     appUtil.setThisApp(new PeerAppRobotController(context));
 
